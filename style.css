@@ -129,6 +129,11 @@ p {
   height: 30px;
   width: 35px;
   padding-right: 15px;
+  transition: transform .2s;
+}
+
+.clinks:hover {
+  transform: scale(1.5);
 }
 
 .buttons {
