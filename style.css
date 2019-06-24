@@ -1,72 +1,252 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  //background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  //padding-right: 60px;
+}
+
+.mainPage, .projectPage, .contactPage, .gitHubPage {
+  text-decoration: none;
+}
+
+.mainPage:hover {
+  text-decoration: underline;
+}
+
+.projectPage:hover {
+  text-decoration: underline;
+}
+
+.contactPage:hover {
+  text-decoration: underline;
+}
+
+.gitHubPage:hover {
+  text-decoration: underline;
+}
+
+.disappear {
+  display: none;
+}
+
+a {
+  color: white;
+  font-size: 16px;
+}
+
+header {
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+ // height: auto;
+} 
+
+.image {
+  width: 600px;
+}
+
+section {
+  height: auto;
+}
+
+h1 {
+ margin-top: 25px;
+}
+
+h2 {
+  margin-top: 25px;
+}
+
+.headline {
+  height: auto; 
+  font-size: 20px;
+  text-align: center;
   
-  /*
-  body {
-    background-color: black; 
-    }
-        */
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
+}
+
+.description {
+  text-align: left;
+}
+//.project {
+  //padding: 0px;
+  //height: 55px;
+//}
+
+.projectSS {
+  width: 100%;
+}
+.screenshot {
+  height: auto;
+  //padding-top: 20px;
+}
+
+.tech {
+  text-align: center;
+}
+.tech-used {
+  height: 50px;
+  width: 50px;
+}
+
+.contactLinks {
+  height: 50px;
+  text-align: center;
+}
+
+.clinks {
+  height: 30px;
+  width: 35px;
+  padding-right: 15px;
+}
+
+.buttons {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+button {
+  font-size: 16px;
+  background-color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  padding: 5px 10px;
+  width: 125px;
+  border-color: gray;
+  margin-right: 10px;
+
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 320px) {
   nav {
-    background-color: lightgray;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  li {
-    display: inline;
-    padding-right: 60px;
-  }
-  
-  header {
-    background-color: darkgray;
-    text-align: center;
-    margin-top: 50px;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 35px;
-  }
-  
-  section {
-    background-color: lightgray;
-    height: 200px;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 10px;
-  }
-  
-  section:nth-child(odd) {
-    background-color: darkgray;
-  }
-  
-  .headline {
-    height: 100px;
-    padding-top: 25px;
-  }
-  
-  .project {
-    padding: 0px;
-    height: 55px;
-  }
-  
-  .screenshot {
-    height: 150px;
-    /* padding-top: 20px; */
-  }
-  
-  .clinks {
     height: 50px;
-  }
-  
-  @media only screen and (max-width: 445px) {
-    li {
-      padding-right: 15px;
     }
+  
+.navBar ul {
+  display: flex;
+  justify-content: center;
+}
+
+  li {
+    padding-right: 10px;
   }
+
+  .image {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+.description {
+  text-align: left;
+}
+
+  .tech-used {
+    height: auto;
+    width: 25px;
+  }
+
+  .gitHubPage {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 445px) and (min-width: 375px) {
+  nav {
+    height: 50px;
+    }
+  
+.navBar ul {
+  display: flex;
+  justify-content: center;
+}
+
+  li {
+    padding-right: 24px;
+  }
+
+.description {
+  text-align: left;
+} 
+
+  .image {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .tech-used {
+    height: auto;
+    width: 25px;
+  }
+
+  .gitHubPage {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1000px) {
+  section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tech-used {
+    padding-right: 10px;
+  }
+  .clinks {
+    width: 40px;
+    height: 35px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navBar ul {
+  display: flex;
+  justify-content: space-around;
+}
+  ul.pageLinks {
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+}

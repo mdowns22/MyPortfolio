@@ -5,21 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather+Sans|Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav role="navigation">
-      <ul>
-        <li><a href="index.html">Melvin Downs</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+    <div class="navBar">
+      <ul class="pageLinks">
+        <li><a class="mainPage" href="#">Melvin Downs</a></li>
+        <li><a class="projectPage" href="#">Projects</a></li>
+        <li><a class="contactPage" href="#">Contact Me</a></li>
+        <li><a class="gitHubPage" href="https://github.com/mdowns22" target="_blank">GitHub</a></li>
       </ul>
+    </div>
     </nav>
-    <main role="main">
-      <header role="banner">
-        <h1>Hero</h1>
+    <main class="container" role="main">
+      <header class="hero-image" role="banner">
+       <img class="image" src="heroimage.jpg">
       </header>
-      <section class="headline">Headline</section>
-      <section>Bio</section>
+      <section> 
+        <div class="headline">
+          <h1>Hello, I’m Melvin. I’m a student that aspires to be a full stack developer.</h1>
+        </div>
+      </section>
+      <section>
+        <p>Currently, I am a student in the Full Stack Bootcamp at Thinkful. Since my early teens, I’ve always had an interest in technology and developed curiosities on how things work. I have a passion for coding simply because it’s the brain of the tech world. It is so exciting to solve problems and create things with code. Currently, I am proficient in HTML, CSS, JavaScript, and JQuery. 
+        </p>
+        <p>Outside of coding, I love to play video games, watch anime, and read comics. I also enjoy exercising and playing sports. My lifelong goals are to enjoy life, to continue learning, to give 100% effort every time, and to improve each day.
+        </p>
+      </section>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
