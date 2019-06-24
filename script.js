@@ -1,5 +1,13 @@
 'use strict'
+//When planning for my Portfolio I wanted to try to minimize the viewer's scrolling.
+//To do that I decided to use Jquery to render my html to one page. So for my bio and contact page the viewer only have to
+//make one click to see those.
+//Them same for my projects page, but eventually that will be multiple pages so the viewer would have to scroll to see all of 
+//my projects.
+//I felt like this approach would allow viewers to quickly see all the key points of my portfolio.
 
+
+//This function will display my main page which is also my introduction and bio and also render when the link is clicked
 function melvinDowns() {
   $('.mainPage').on('click', function (event){
     console.log("main page");
@@ -7,14 +15,14 @@ function melvinDowns() {
   });
 }
 
-
+//this function will reder my projects to the page once the link is clicked
 function projects() {
   $('.projectPage').on('click', function (event){
     console.log("projects page");
     projectsContent();
   });
 }
-
+//This function will render my contact info and links to the page
 function contactMe() {
   $('.contactPage').on('click', function (event){
     console.log("contact page");
@@ -23,7 +31,7 @@ function contactMe() {
 }
 
 
-
+//For these functions I set my html as a variable and target my main element with the class of container to render the html of each section
 function mainPageContent() {
   let mainPageHtml = `<main class="container" role="main">
       <header role="banner">
@@ -97,7 +105,7 @@ function contactContent() {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/melvin-downs-a65032a6"       target="_blank">
+              <a href="https://www.linkedin.com/in/melvin-downs-a65032a6" target="_blank">
               <img class="clinks" src="linkedin.jpg" alt="linkedIn-link">
               </a>
             </li>
@@ -114,7 +122,7 @@ function contactContent() {
     $('.container').html(contactPageHtml);
 }
 
-
+//This function makes my navigation bar more responsive by adding or removing my gitHub link depending on the screen size
 function browserSize() {
 $(window).resize(function() {
 
