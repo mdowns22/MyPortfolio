@@ -35,7 +35,7 @@ function contactMe() {
 function mainPageContent() {
   let mainPageHtml = `<main class="container" role="main">
       <header role="banner">
-        <img class="image" src="heroimage.jpg" alt="quote-image">
+        <img class="image" src="heroimage.jpg" alt="Every Champion Was Once A Contender That Refused To Give Up -Rocky Balboa">
       </header>
       <section> 
         <div class="headline">
