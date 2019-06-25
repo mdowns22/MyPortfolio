@@ -43,7 +43,7 @@ function mainPageContent() {
         </div>
       </section>
       <section>
-        <p>Currently, I am a student in the Full Stack Bootcamp at Thinkful. Since my early teens, I’ve always had interests in technology and developed curiosities on how things work. I have a passion for coding simply because it’s the brain of the tech world. It is so exciting to solve problems and create things with code. Currently, I am proficient in HTML, CSS, JavaScript, and JQuery. 
+        <p>Currently, I am a student in the Full Stack Bootcamp at Thinkful. Since my early teens, I’ve always had an interest in technology and developed curiosities on how things work. I have a passion for coding simply because it’s the brain of the tech world. It is so exciting to solve problems and create things with code. Currently, I am proficient in HTML, CSS, JavaScript, and JQuery. 
         </p>
         <p>Outside of coding, I love to play video games, watch anime, and read comics. I also enjoy exercising and playing sports. My lifelong goals are to enjoy life, to continue learning, to give 100% effort every time, and to improve each day.</p>
       </section>
