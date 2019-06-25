@@ -3,7 +3,6 @@
 }
 
 body {
-  //background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +27,6 @@ ul {
 
 li {
   display: inline;
-  //padding-right: 60px;
 }
 
 .mainPage, .projectPage, .contactPage, .gitHubPage {
@@ -64,7 +62,6 @@ header {
   padding-top: 20px;
   width: 100%;
   text-align: center;
- // height: auto;
 } 
 
 .image {
@@ -99,17 +96,12 @@ p {
 .description {
   text-align: left;
 }
-//.project {
-  //padding: 0px;
-  //height: 55px;
-//}
 
 .projectSS {
   width: 100%;
 }
 .screenshot {
   height: auto;
-  //padding-top: 20px;
 }
 
 .tech {
@@ -158,23 +150,14 @@ button:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 700px) {
   nav {
     height: 50px;
     }
   
-.navBar ul {
-  display: flex;
-  justify-content: center;
-}
-
-  li {
-    padding-right: 10px;
-  }
-
   .image {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
 .description {
@@ -191,40 +174,22 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 445px) and (min-width: 375px) {
-  nav {
+@media only screen and (max-width: 800px) and (min-width: 701px) {
+ nav {
     height: 50px;
     }
   
-.navBar ul {
-  display: flex;
-  justify-content: center;
-}
-
-  li {
-    padding-right: 24px;
-  }
-
 .description {
   text-align: left;
 } 
 
-  .image {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .tech-used {
+ .tech-used {
     height: auto;
     width: 25px;
   }
-
-  .gitHubPage {
-    display: none;
-  }
 }
 
-@media only screen and (max-width: 1600px) and (min-width: 1000px) {
+@media only screen and (max-width: 1600px) and (min-width: 801px) {
   section {
     width: 800px;
     margin-left: auto;
@@ -232,6 +197,8 @@ button:hover {
   }
   .tech-used {
     padding-right: 10px;
+    height: auto;
+    
   }
   .clinks {
     width: 40px;
@@ -240,7 +207,7 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 1650px) {
+@media only screen and (min-width: 1601px) {
   section {
     width: 800px;
     margin-left: auto;
