@@ -126,7 +126,7 @@ function contactContent() {
 function browserSize() {
 $(window).resize(function() {
 
-  if ($('nav').width() <= 601) {
+  if ($('nav').width() <= 701) {
     $(".gitHubPage").addClass('disappear');
   } else {
     $(".gitHubPage").removeClass('disappear');
