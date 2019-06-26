@@ -93,25 +93,27 @@ function contactContent() {
         <h2>Contact Me</h2>
       </header>
       <section>
-        <p>Melvin Downs</p>
-        <p>Email: mdowns_22@yahoo.com</p>
+        <div class="info">
+            <p>Melvin Downs</p>
+            <p>Email: mdowns_22@yahoo.com</p>
+        </div>
       </section>
       <section> 
         <div class="contactLinks">
           <ul>
             <li>
               <a href="https://github.com/mdowns22" target="_blank">
-              <img class="clinks" src="github.jpg" alt="github-link">
+              <img class="cimg" src="github.jpg" alt="github-link">
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/melvin-downs-a65032a6" target="_blank">
-              <img class="clinks" src="linkedin.jpg" alt="linkedIn-link">
+              <img class="cimg" src="linkedin.jpg" alt="linkedIn-link">
               </a>
             </li>
             <li>
               <a href="mailto:mdowns_22@yahoo.com" target="_blank">
-              <img class="clinks" src="email.jpg" alt="email-link">
+              <img class="cimg" src="email.jpg" alt="email-link">
               </a>
             </li>
           </ul>

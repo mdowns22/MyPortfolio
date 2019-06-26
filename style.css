@@ -20,6 +20,7 @@ nav {
 .navBar ul {
   display: flex;
   justify-content: space-around;
+  font-family: 'Merriweather sans', sans-serif;
 }
 
 ul {
@@ -75,22 +76,33 @@ section {
 
 h1 {
  margin-top: 25px;
+ font-family: 'Open sans', sans-serif;
+ font-weight: 600;
 }
 
 h2 {
   margin-top: 25px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 600;
 }
 
 .headline {
   height: auto; 
   font-size: 20px;
   text-align: center;
+  font-family: 'Open sans', sans-serif;
 }
 
 p {
   font-size: 20px;
   font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+.project {
   text-align: center;
+  font-weight: 300;
 }
 
 .description {
@@ -112,19 +124,23 @@ p {
   width: 50px;
 }
 
-.contactLinks {
-  height: 50px;
+.info {
   text-align: center;
 }
 
-.clinks {
-  height: 30px;
-  width: 35px;
+.contactLinks {
+  display: inline;
+  text-align: center;
+}
+
+.cimg {
+  height: 50px;
+  width: 55px;
   padding-right: 15px;
   transition: transform .2s;
 }
 
-.clinks:hover {
+.cimg:hover {
   transform: scale(1.5);
 }
 
@@ -148,6 +164,12 @@ button:hover {
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 575px) {
+  .headline {
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -200,9 +222,7 @@ button:hover {
     height: auto;
     
   }
-  .clinks {
-    width: 40px;
-    height: 35px;
+  .cimg {
     padding-right: 20px;
   }
 }
@@ -220,5 +240,11 @@ button:hover {
   ul.pageLinks {
   margin-left: 20px;
   margin-right: 20px;
+  }
+  .cimg {
+    padding-right: 25px;
+  }
+  .cimg:hover {
+    transform: scale(1.7);
   }
 }
